@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <title>Mercado das Tintas</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <div class="logo-container">
+              <img class="logo-img" src="assets/img/logo Mercado das Tintas.png" alt="img">
+            </div>
+          </a>
+        </div>
+        <div class="nav-list">
+          <ul id="nav-items">
+            <li><a href="#hero" data-after="Home">Produtos</a></li>
+            <li><a href="#services" data-after="Service">Principais Marcas</a></li>
+            <li><a href="#results" data-after="Projects">Contato</a></li>
+            <li><a href="#about" data-after="About">Localização</a></li>
+          </ul>
+        </div>
+
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+        <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+        <aside class="menu">
+          <div class="main-content menu-content">
+            <nav>
+              <ul id="menu-items" onclick="document.getElementById('close-menu').checked = false;">
+
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <script>
+
+          const navItems = document.getElementById('nav-items').cloneNode(true);
+          const menuItems = document.getElementById('menu-items');
+
+
+          const itemTexts = ['Produtos', 'Principais Marcas', 'Contato', 'Localização'];
+          const listItems = navItems.getElementsByTagName('li');
+
+          for (let i = 0; i < listItems.length; i++) {
+            const link = listItems[i].getElementsByTagName('a')[0];
+            link.textContent = itemTexts[i];
+          }
+
+          menuItems.appendChild(navItems);
+        </script>
+
+
+      </div>
+    </div>
+
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <a href="https://abrir.link/KRAoQ" target="_blank" class="whatsapp-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+    </a>
+
+    <div class="carousel">
+      <div class="carousel-slide">
+        <img src="assets/img/2.png" alt="Imagem 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/img/1.png" alt="Imagem 2">
+      </div>
+    </div>
+
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+
+  <section id="sectiontwo">
+
+  </section>
+
+  <!-- Product Section -->
+  <section id="products" class="products">
+    <h2 class="section-title">Nossos Produtos</h2>
+
+    <div class="product-items">
+      <div class="product">
+        <h3>Parede</h3>
+        <p>As melhores marcas de tintas, texturas e acabamentos para deixar impecáveis.</p>
+      </div>
+      <div class="product">
+        <h3>Madeira</h3>
+        <p>Produtos de alta qualidade para proteção e acabamento de superfícies de madeira.</p>
+      </div>
+      <div class="product">
+        <h3>Metais</h3>
+        <p>Soluções resistentes para detalhes de metais, como ferragens e estruturas.</p>
+      </div>
+      <div class="product">
+        <h3>Acessórios</h3>
+        <p>Pincéis, rolos, lixas e ferramentas indispensáveis para o seu projeto.</p>
+      </div>
+    </div>
+
+    <div class="product-images">
+      <div class="product-image">
+        <img src="assets/img/img1.png" alt="Produto 1">
+        <p>Nome do Produto 1</p>
+      </div>
+      <div class="product-image">
+        <img src="assets/img/img2.png" alt="Produto 2">
+        <p>Nome do Produto 2</p>
+      </div>
+      <div class="product-image">
+        <img src="assets/img/img3.png" alt="Produto 3">
+        <p>Nome do Produto 3</p>
+      </div>
+      <div class="product-image">
+        <img src="assets/img/img4.png" alt="Produto 4">
+        <p>Nome do Produto 4</p>
+      </div>
+      <div class="product-image">
+        <img src="assets/img/img5.png" alt="Produto 5">
+        <p>Nome do Produto 5</p>
+      </div>
+      <div class="product-image">
+        <img src="assets/img/img6.png" alt="Produto 6">
+        <p>Nome do Produto 6</p>
+      </div>
+      <div class="product-image">
+        <img src="assets/img/img7.png" alt="Produto 7">
+        <p>Nome do Produto 7</p>
+      </div>
+      <div class="product-image">
+        <img src="assets/img/img8.png" alt="Produto 8">
+        <p>Nome do Produto 8</p>
+      </div>
+    </div>
+  </section>
+  <!-- End Product Section -->
+
+
+  <section id="sectionfour">
+    <p>texto exemplo</p>
+    <img src="assets/img/vendedor.png" alt="Produto 13">
+  </section>
+
+
+  <!-- Logos Section -->
+  <section id="logos-section" class="logos-section">
+    <div class="logos">
+      <img src="assets/img/logo1.png" alt="Logo 1">
+    </div>
+    <div class="logos">
+      <img src="assets/img/logo2.webp" alt="Logo 2">
+    </div>
+    <div class="logos">
+      <img src="assets/img/logo3.png" alt="Logo 3">
+    </div>
+    <div class="logos">
+      <img src="assets/img/logo4.png" alt="Logo 4">
+    </div>
+    <div class="logos">
+      <img src="assets/img/logo5.webp" alt="Logo 5">
+    </div>
+    <div class="logos">
+      <img src="assets/img/logo6.png" alt="Logo 6">
+    </div>
+    <div class="logos">
+      <img src="assets/img/logo7.png" alt="Logo 7">
+    </div>
+    <div class="logos">
+      <img src="assets/img/logo8.webp" alt="Logo 8">
+    </div>
+    <div class="logos">
+      <img src="assets/img/logo9.png" alt="Logo 9">
+    </div>
+    <div class="logos">
+      <img src="assets/img/logo10.webp" alt="Logo 10">
+    </div>
+    <div class="logos">
+      <img src="assets/img/logo11.webp" alt="Logo 11">
+    </div>
+
+
+  </section>
+  <!-- End Logos Section -->
+
+  <!-- Address Section -->
+  <section id="address">
+    <div class="address container">
+      <div class="address-top">
+        <h1 class="section-title"><span>Confira a Localização de nossas lojas</span></h1>
+      </div>
+      <div class="address-bottom">
+        <div class="address-item" data-aos="fade-up">
+          <div class="image">
+            <img src="assets/img/NOVO HAMBURGO.jpg" alt="Novo Hamburgo">
+          </div>
+          <p>
+            <span class="icon">
+              <img src="assets/img/icons8-local-48.png" alt="Endereço">
+            </span>
+            Novo Hamburgo - Av. Cel. Frederico Linck, 883 - Ideal
+          </p>
+        </div>
+
+        <div class="address-item" data-aos="fade-up">
+          <div class="image">
+            <img src="assets/img/CAPÃO DA CANOA.png" alt="Capão da Canoa">
+          </div>
+          <p>
+            <span class="icon">
+              <img src="assets/img/icons8-local-48.png" alt="Endereço">
+            </span>
+            Capão da Canoa
+            RS-407, 1234 - Santa Luzia
+          </p>
+        </div>
+
+        <div class="address-item" data-aos="fade-up">
+          <div class="image">
+            <img src="assets/img/VIAMÃO.jpg" alt="Viamão">
+          </div>
+          <p>
+            <span class="icon">
+              <img src="assets/img/icons8-local-48.png" alt="Endereço">
+            </span>
+            Viamão
+            Av. Sen. Salgado Filho, 970 - Cecília
+          </p>
+        </div>
+
+        <div class="address-item" data-aos="fade-up">
+          <div class="image">
+            <img src="assets/img/São Leopoldo.jpg" alt="São Leopoldo">
+          </div>
+          <p>
+            <span class="icon">
+              <img src="assets/img/icons8-local-48.png" alt="Endereço">
+            </span>
+            São Leopoldo
+            Av. João Corrêa, 1452 - Centro
+          </p>
+        </div>
+
+        <div class="address-item" data-aos="fade-up">
+          <div class="image">
+            <img src="assets/img/Sto Antonio.jpg" alt="Santo Antonio">
+          </div>
+          <p>
+            <span class="icon">
+              <img src="assets/img/icons8-local-48.png" alt="Endereço">
+            </span>
+            Santo Antônio da Patrulha
+            Av. Cel. Victor Villa Verde, 511 - Centro
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Address Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div>
+      <div class="logo-container">
+        <img class="logo-img" src="assets/img/logo up-1.png" alt="img">
+      </div>
+      <br>
+      <br>
+      <div class="social-icons">
+        <a n href="https://abrir.link/KRAoQ" target="_blank">
+          <img src="assets/img/whatsapp-icon.png" alt="WhatsApp"> 79988381834</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/novodenovo_se/" target="_blank">
+          <img src="assets/img/instagram-icon.png" alt="Instagram">@senovodenovo</a>
+      </div>
+
+      <div class="social-icons">
+        <a>
+          <img src="assets/img/loc.png" alt="Localization"> Aracaju/SE e Carmópolis/SE</a>
+      </div>
+    </div>
+    <br><br>
+    <a>Copyright © 2024 Novo de Novo. Todos os direitos reservados</a> <br>
+    <a rel="nofollow" target="_blank" href="https://ariellisboalopes.netlify.app">Feito com <span class="heart">❤</span>
+      por Ariel Lisboa</a>
+  </section>
+  <!-- End Footer -->
+
+
+  <script src="./app.js"></script>
+  <script>
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-indicators .dot');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.transform = `translateX(-${index * 100}%)`;
+        dots[i].classList.remove('active');
+      });
+
+      dots[index].classList.add('active');
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentIndex = index;
+        showSlide(currentIndex);
+      });
+    });
+
+    // Iniciar o carrossel
+    setInterval(nextSlide, 3000); // Troca de imagem a cada 3 segundos
+
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2500,  // Tempo da animação (em milissegundos)
+      once: true,  // A animação acontece apenas uma vez
+      easing: 'ease-in-out',  // Tipo de transição
+    });
+  </script>
+</body>
+
+</html>
