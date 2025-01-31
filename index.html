@@ -8,6 +8,31 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/menu.css">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-621884261"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-621884261');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PFNH5TV7');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFNH5TV7" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <title>Mercado das Tintas</title>
 </head>
 
@@ -25,12 +50,18 @@
         </div>
         <div class="nav-list">
           <ul id="nav-items">
-            <li><a href="#hero" data-after="Home">Produtos</a></li>
-            <li><a href="#services" data-after="Service">Principais Marcas</a></li>
-            <li><a href="#results" data-after="Projects">Contato</a></li>
-            <li><a href="#about" data-after="About">Localização</a></li>
+            <li><a href="#products" data-after="Home">Produtos</a></li>
+            <li><a href="#logos" data-after="Service">Principais Marcas</a></li>
+            <li><a href="contacts.html" data-after="Projects">Contato</a></li>
+            <li><a href="#address" data-after="About">Localização</a></li>
           </ul>
         </div>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/mercadodastintasoficiall" target="_blank">
+            <img src="assets/img/icons8-instagram-48.png" alt="Instagram" class="instagram-logo">
+          </a>
+        </div>
+
 
         <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
         <label class="close-menu-label" for="close-menu" title="close menu"></label>
@@ -72,16 +103,17 @@
 
   <!-- Hero Section -->
   <section id="hero">
-    <a href="https://abrir.link/KRAoQ" target="_blank" class="whatsapp-button">
+    <a href="contacts.html" target="_blank" class="whatsapp-button">
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
     </a>
 
     <div class="carousel">
       <div class="carousel-slide">
-        <img src="assets/img/teste.png" alt="Imagem 1">
+
+        <img src="assets/img/1.png" alt="Imagem 1">
       </div>
       <div class="carousel-slide">
-        <img src="assets/img/teste2.png" alt="Imagem 2">
+        <img src="assets/img/2.png" alt="Imagem 2">
       </div>
     </div>
 
@@ -94,30 +126,30 @@
 
   <!-- End Hero Section -->
 
-  <!-- SectionTwo -->
+  <!-- Section Two -->
   <section id="sectiontwo">
-    <h2 class=" h-title">Há 18 anos oferecendo as melhores soluções e
-      condições para a sua obra!
-    </h2>
-    <p>Está sem tempo de vir até uma de nossas lojas? Fique tranquilo, é só fazer o seu pedido via WhatsApp que levamos
-      até você!</p>
-    <br>
-    <br>
-    <article class="whatsapp-article">
-      <a href="https://api.whatsapp.com/send?phone=557998660464&text=Ol%C3%A1,%20vim%20do%20google%20e%20gostaria%20de%20um%20or%C3%A7amento!"
-        target="_blank" class="whatsapp-cta">
-        Compre Via WhatsApp
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"
-          class="cta-whats">
-      </a>
-      </div>
-    </article>
+    <div class="containertwo">
+      <h2 class="h-title">Há 18 anos oferecendo as melhores soluções e condições para a sua obra!</h2>
+      <p>Está sem tempo de vir até uma de nossas lojas? Fique tranquilo, é só fazer o seu pedido via WhatsApp que
+        levamos
+        até você!</p>
+      <br>
+      <br>
+      <article class="whatsapp-article">
+        <a href="contacts.html" target="_blank" class="whatsapp-cta">
+          Compre Via WhatsApp
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"
+            class="cta-whats">
+        </a>
+      </article>
+    </div>
   </section>
   <!-- End Section Two -->
 
+
   <!-- Product Section -->
   <section id="products" class="products">
-    <h1 class="section-title">Nossos Produtos</h1>
+    <h1 class="section-title">Renove, Construa e Decore com os nossos produtos</h1>
 
     <div class="product-items">
       <div class="product">
@@ -141,35 +173,53 @@
     <div class="product-images">
       <div class="product-image">
         <img src="assets/img/img1.png" alt="Produto 1">
-        <p>Nome do Produto 1</p>
+        <p>Osmocolor Montana 18L </p>
       </div>
       <div class="product-image">
         <img src="assets/img/img2.png" alt="Produto 2">
-        <p>Nome do Produto 2</p>
+        <p>Textura New Tintas 18L</p>
       </div>
       <div class="product-image">
         <img src="assets/img/img3.png" alt="Produto 3">
-        <p>Nome do Produto 3</p>
+        <p>tinta Econômica 18L</p>
       </div>
       <div class="product-image">
         <img src="assets/img/img4.png" alt="Produto 4">
-        <p>Nome do Produto 4</p>
+        <p>
+          Tinta Metalatex Sherwin Williams 3,5L </p>
       </div>
       <div class="product-image">
         <img src="assets/img/img5.png" alt="Produto 5">
-        <p>Nome do Produto 5</p>
+        <p>Tinta Emborrachada Hydronorth 18L</p>
       </div>
       <div class="product-image">
         <img src="assets/img/img6.png" alt="Produto 6">
-        <p>Nome do Produto 6</p>
+        <p>Tinta Metalatex Lavável Sherwin Williams</p>
       </div>
       <div class="product-image">
         <img src="assets/img/img7.png" alt="Produto 7">
-        <p>Nome do Produto 7</p>
+        <p>Tinta Metalatex Sherwin Williams 18L</p>
       </div>
+
       <div class="product-image">
         <img src="assets/img/img8.png" alt="Produto 8">
-        <p>Nome do Produto 8</p>
+        <p>Linha Industrial Duramax 3,6L</p>
+      </div>
+      <div class="product-image">
+        <img src="assets/img/img9.png" alt="Produto 9">
+        <p>Osmocolor Montana</p>
+      </div>
+      <div class="product-image">
+        <img src="assets/img/img11.png" alt="Produto 11">
+        <p>Cobre Mais Sherwin Williams 18L</p>
+      </div>
+      <div class="product-image">
+        <img src="assets/img/img12.png" alt="Produto 12">
+        <p>Padroni New Tintas</p>
+      </div>
+      <div class="product-image">
+        <img src="assets/img/img14.png" alt="Produto 14">
+        <p>Borracha Líquida Hydronorth 4,5kg</p>
       </div>
     </div>
   </section>
@@ -182,8 +232,7 @@
     </div>
     <br><br><br><br><br><br><br><br><br><br>
     <article class="button-article">
-      <a href="https://api.whatsapp.com/send?phone=557998660464&text=Ol%C3%A1,%20vim%20do%20google%20e%20gostaria%20de%20um%20or%C3%A7amento!"
-        target="_blank" class="button-cta">
+      <a href="contacts.html" target="_blank" class="button-cta">
         Orçamento Gratuito
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"
           class="cta-button">
@@ -195,51 +244,29 @@
 
 
   <!-- Logos Section -->
-  <section id="logos-section">>
+  <section id="logos">
     <div class="logos-section">
-      <div class="logos">
-        <img src="assets/img/logo1.png" alt="Logo 1">
-      </div>
-      <div class="logos">
-        <img src="assets/img/logo2.webp" alt="Logo 2">
-      </div>
-      <div class="logos">
-        <img src="assets/img/logo3.png" alt="Logo 3">
-      </div>
-      <div class="logos">
-        <img src="assets/img/logo4.png" alt="Logo 4">
-      </div>
-      <div class="logos">
-        <img src="assets/img/logo5.webp" alt="Logo 5">
-      </div>
-      <div class="logos">
-        <img src="assets/img/logo6.png" alt="Logo 6">
-      </div>
-      <div class="logos">
-        <img src="assets/img/logo7.png" alt="Logo 7">
-      </div>
-      <div class="logos">
-        <img src="assets/img/logo8.webp" alt="Logo 8">
-      </div>
-      <div class="logos">
-        <img src="assets/img/logo9.png" alt="Logo 9">
-      </div>
-      <div class="logos">
-        <img src="assets/img/logo10.webp" alt="Logo 10">
-      </div>
-      <div class="logos">
-        <img src="assets/img/logo11.webp" alt="Logo 11">
-      </div>
+      <div class="logos"><img src="assets/img/logo1.png" alt="Logo 1"></div>
+      <div class="logos"><img src="assets/img/logo2.webp" alt="Logo 2"></div>
+      <div class="logos"><img src="assets/img/logo3.png" alt="Logo 3"></div>
+      <div class="logos"><img src="assets/img/logo4.png" alt="Logo 4"></div>
+      <div class="logos"><img src="assets/img/logo5.webp" alt="Logo 5"></div>
+      <div class="logos"><img src="assets/img/logo6.png" alt="Logo 6"></div>
+      <div class="logos"><img src="assets/img/logo7.png" alt="Logo 7"></div>
+      <div class="logos"><img src="assets/img/logo8.webp" alt="Logo 8"></div>
+      <div class="logos"><img src="assets/img/logo9.png" alt="Logo 9"></div>
+      <div class="logos"><img src="assets/img/logo10.webp" alt="Logo 10"></div>
+      <div class="logos"><img src="assets/img/logo11.webp" alt="Logo 11"></div>
     </div>
+
     <article class="whatsapp-article">
-      <a href="https://api.whatsapp.com/send?phone=557998660464&text=Ol%C3%A1,%20vim%20do%20google%20e%20gostaria%20de%20um%20or%C3%A7amento!"
-        target="_blank" class="whatsapp-cta">
+      <a href="contacts.html" target="_blank" class="whatsapp-cta">
         Compre Via WhatsApp
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"
           class="cta-whats">
       </a>
-      </div>
     </article>
+  </section>
 
 
   </section>
@@ -257,10 +284,12 @@
             <img src="assets/img/NOVO HAMBURGO.jpg" alt="Novo Hamburgo">
           </div>
           <p>
-            <span class="icon">
-              <img src="assets/img/icons8-local-48.png" alt="Endereço">
-            </span>
-            Novo Hamburgo - Av. Cel. Frederico Linck, 883 - Ideal
+            <a href="https://maps.app.goo.gl/PUvmRU4zgdtcJNfK8" target="_blank">
+              <span class="icon">
+                <img src="assets/img/icons8-local-48.png" alt="Endereço">
+              </span>
+              Novo Hamburgo - Av. Cel. Frederico Linck, 883 - Ideal
+            </a>
           </p>
         </div>
 
@@ -269,11 +298,12 @@
             <img src="assets/img/CAPÃO DA CANOA.png" alt="Capão da Canoa">
           </div>
           <p>
-            <span class="icon">
-              <img src="assets/img/icons8-local-48.png" alt="Endereço">
-            </span>
-            Capão da Canoa
-            RS-407, 1234 - Santa Luzia
+            <a href="https://maps.app.goo.gl/t3yjeyx2iU7hgZXq8" target="_blank">
+              <span class="icon">
+                <img src="assets/img/icons8-local-48.png" alt="Endereço">
+              </span>
+              Capão da Canoa - RS-407, 1234 - Santa Luzia
+            </a>
           </p>
         </div>
 
@@ -282,11 +312,12 @@
             <img src="assets/img/VIAMÃO.jpg" alt="Viamão">
           </div>
           <p>
-            <span class="icon">
-              <img src="assets/img/icons8-local-48.png" alt="Endereço">
-            </span>
-            Viamão
-            Av. Sen. Salgado Filho, 970 - Cecília
+            <a href="https://maps.app.goo.gl/qL2hTtBcg2LCTSor9" target="_blank">
+              <span class="icon">
+                <img src="assets/img/icons8-local-48.png" alt="Endereço">
+              </span>
+              Viamão - Av. Sen. Salgado Filho, 970 - Cecília
+            </a>
           </p>
         </div>
 
@@ -295,11 +326,12 @@
             <img src="assets/img/São Leopoldo.jpg" alt="São Leopoldo">
           </div>
           <p>
-            <span class="icon">
-              <img src="assets/img/icons8-local-48.png" alt="Endereço">
-            </span>
-            São Leopoldo
-            Av. João Corrêa, 1452 - Centro
+            <a href="https://maps.app.goo.gl/59mDpVJx6gs2myct6" target="_blank">
+              <span class="icon">
+                <img src="assets/img/icons8-local-48.png" alt="Endereço">
+              </span>
+              São Leopoldo - Av. João Corrêa, 1452 - Centro
+            </a>
           </p>
         </div>
 
@@ -308,17 +340,19 @@
             <img src="assets/img/Sto Antonio.jpg" alt="Santo Antonio">
           </div>
           <p>
-            <span class="icon">
-              <img src="assets/img/icons8-local-48.png" alt="Endereço">
-            </span>
-            Santo Antônio da Patrulha
-            Av. Cel. Victor Villa Verde, 511 - Centro
+            <a href="https://maps.app.goo.gl/DpPRMoX3ppz4foPJ8" target="_blank">
+              <span class="icon">
+                <img src="assets/img/icons8-local-48.png" alt="Endereço">
+              </span>
+              Santo Antônio da Patrulha - Av. Cel. Victor Villa Verde, 511 - Centro
+            </a>
           </p>
         </div>
       </div>
     </div>
   </section>
   <!-- End Address Section -->
+
 
   <!-- Footer -->
   <section id="footer">
@@ -328,26 +362,38 @@
       </div>
       <br>
       <br>
-      <div class="social-icons">
-        <a n href="https://" target="_blank">
-          <img src="assets/img/whatsapp-icon.png" alt="WhatsApp"> </a>
-      </div>
-      <div class="social-icons">
-        <a href="https://www.instagram.com//" target="_blank">
-          <img src="assets/img/instagram-icon.png" alt="Instagram">@</a>
+      <h2>Faça já o seu orçamento!</h2>
+      <article class="whatsapp-article">
+        <a href="contacts.html" target="_blank" class="whatsapp-cta">
+          Orçamento Gratuito
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"
+            class="cta-whats">
+        </a>
+      </article>
+
+      <br><br>
+      <!-- Links do Menu -->
+      <div class="footer-links">
+        <div class="social-icons">
+          <a href="https://www.instagram.com/seuperfil" target="_blank">
+            <img src="assets/img/icons8-instagram-48.png" alt="Instagram" class="instagram-logo">
+          </a>
+        </div>
+        <a class="afooter" href="#products">Produtos</a>
+        <a class="afooter" href="#logos">Principais Marcas</a>
+        <a class="afooter" href="contacts.html">Contato</a>
+        <a class="afooter" href="#address">Localização</a>
       </div>
 
-      <div class="social-icons">
-        <a>
-          <img src="assets/img/loc.png" alt="Localization"> Aracaju/SE e Carmópolis/SE</a>
-      </div>
     </div>
     <br><br>
-    <a>Copyright © 2025 Mercado Das Tintas. Todos os direitos reservados</a> <br>
-    <a rel="nofollow" target="_blank" href="https://ariellisboalopes.netlify.app">Feito com <span class="heart">❤</span>
-      por Ariel Lisboa</a>
+    <a class="afooter">Copyright © 2025 Mercado Das Tintas. Todos os direitos reservados</a> <br>
+    <a class="signature" rel="nofollow" target="_blank" href="https://ariellisboalopes.netlify.app">
+      Feito com <span class="heart">❤</span> por Ariel Lisboa
+    </a>
   </section>
   <!-- End Footer -->
+
 
 
   <script src="./app.js"></script>
@@ -396,6 +442,16 @@
       easing: 'ease-in-out',  // Tipo de transição
     });
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".carousel-slide img").forEach(img => {
+        img.addEventListener("click", function () {
+          window.location.href = "contacts.html";
+        });
+      });
+    });
+  </script>
+
 </body>
 
 </html>

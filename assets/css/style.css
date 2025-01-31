@@ -177,6 +177,31 @@ p {
 	color: #1c94d4;
 }
 
+.social-icons {
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+}
+
+.instagram-logo {
+	width: 30px;
+	/* Ajuste conforme necessário */
+	height: auto;
+	transition: transform 0.3s ease;
+}
+
+.instagram-logo:hover {
+	transform: scale(1.1);
+}
+
+/* Esconder o Instagram no menu hambúrguer */
+@media (max-width: 1199px) {
+	.social-icons {
+		display: none;
+	}
+}
+
+
 /* End Header section */
 
 .whatsapp-article {
@@ -262,7 +287,6 @@ p {
 }
 
 .carousel img {
-	min-height: 50vh;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -328,7 +352,6 @@ p {
 	height: 35px;
 }
 
-
 @keyframes pulse {
 	0% {
 		transform: scale(0.8) !important;
@@ -393,38 +416,63 @@ p {
 
 /* End Hero Section */
 
-
+/* Section Two */
 #sectiontwo {
-	/* background-image: url(/assets/img/loja.png); */
-	background-color: #ffffff;
+	background-color: #1c94d4;
+	/* Azul */
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: top center;
 	position: relative;
-	z-index: -1;
 	min-height: 30vh;
-	/* Define uma altura mínima para a seção */
 	height: auto;
-	/* Permite que a altura se ajuste ao conteúdo */
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-
 	align-items: center;
-
+	padding: 40px 20px;
 }
 
+.containertwo {
+	background: #ffffff;
+	/* Fundo branco */
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.24);
+	max-width: 800px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Ajustando textos */
 .h-title {
 	font-size: 2rem;
 	color: #cc2c8c;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 p {
 	font-size: 1.6rem;
 	color: #cc2c8c;
-	margin-left: 30px;
+	margin: 0 auto;
+	max-width: 600px;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+	.containertwo {
+		padding: 20px;
+	}
+
+	.h-title {
+		font-size: 1.8rem;
+	}
+
+	p {
+		font-size: 1.4rem;
+	}
+}
+
+/* End Section Two */
 
 /* Product Section */
 #products {
@@ -721,6 +769,7 @@ p {
 
 
 /* Logo Section */
+/* Logo Section */
 .logos-section {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -744,35 +793,26 @@ p {
 
 .logos img {
 	width: 100px;
-	/* Tamanho menor para a imagem */
 	height: 100px;
 	object-fit: contain;
-	/* Mantém proporção sem cortar */
 	margin-bottom: 10px;
-}
-
-.logos p {
-	font-family: 'Poppins', sans-serif;
-	font-size: 1em;
-	color: #333;
-	text-align: center;
 }
 
 /* Responsividade */
 @media (max-width: 1024px) {
-	.logos {
+	.logos-section {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
 @media (max-width: 768px) {
-	.logos {
+	.logos-section {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media (max-width: 480px) {
-	.logos {
+	.logos-section {
 		grid-template-columns: repeat(1, 1fr);
 	}
 }
@@ -867,10 +907,103 @@ p {
 		text-align: center;
 	}
 }
-
 /* End Address Section */
 
+/* Contact-Address Section */
+#contact-address .contact-address {
+    display: flex;
+    flex-direction: column; /* Garante que os itens fiquem empilhados */
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+    z-index: -1;
+}
 
+#contact-address .contact-address-top {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact-address .contact-address-bottom {
+    display: flex;
+    flex-direction: column; /* Garante que os itens fiquem empilhados */
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#contact-address .contact-address-item {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: left; /* Centraliza os itens na horizontal */
+    text-align: left; /* Garante que o texto fique centralizado */
+    gap: 15px; /* Espaço entre os elementos */
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./img/img-1.png);
+    background-size: cover;
+    margin: 10px 0; /* Garante que o espaçamento seja entre os itens empilhados */
+    width: 300px; /* Define uma largura fixa para todos os itens */
+    position: relative;
+    overflow: hidden;
+}
+
+#contact-address .contact-address-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f3f3f3;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+#contact-address .contact-address-item .icon {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+/* Adiciona flexbox para imagem e texto ficarem ao lado */
+#contact-address .contact-address-item p {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 0;
+    color: rgb(0, 0, 0);
+    display: flex; /* Ativa flexbox no <p> */
+    align-items: center; /* Alinha a imagem e o texto no centro */
+    gap: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+#contact-address .contact-address-item .image img {
+    width: 24px; /* Ajusta o tamanho da imagem */
+    height: 24px;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #contact-address .contact-address-bottom {
+        flex-direction: column; /* Mantém os itens empilhados em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    #contact-address .contact-address-item {
+		text-align: left; 
+        width: 300px; /* Garante que a largura dos itens será fixa mesmo em telas pequenas */
+    }
+
+    #contact-address .contact-address-item p {
+        text-align: left; /* Alinha o texto à esquerda em telas pequenas */
+    }
+}
+
+/* End Contact Address Section */
 
 /* About Section */
 #about .about {
@@ -934,7 +1067,7 @@ p {
 	background-color: #fff;
 	text-align: center;
 	padding: 20px 0;
-	
+
 }
 
 #footer .footer {
@@ -993,8 +1126,8 @@ p {
 }
 
 #footer h2 {
-	color: #ffffff;
-	font-weight: 500;
+	color: #000000;
+	font-weight: bold;
 	font-size: 1.8rem;
 	letter-spacing: 0.1rem;
 	margin-top: 10px;
@@ -1015,8 +1148,40 @@ p {
 	font-size: 1.2rem;
 }
 
+#footer .afooter {
+	color: rgb(0, 0, 0);
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+#footer .signature {
+	color: rgb(0, 0, 0);
+	font-size: 1.2rem;
+}
+
 .heart {
 	color: #ff0202;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	/* Espaçamento entre os links */
+	margin-top: 15px;
+}
+
+.footer-links a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.4rem;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+	color: #1c94d4;
+	/* Cor ao passar o mouse */
 }
 
 /* End Footer */
