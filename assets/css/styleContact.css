@@ -108,8 +108,11 @@ p {
 }
 
 #header .header {
-	min-height: 8vh;
-	background-color: #ffffff;
+	min-height: 30vh;
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	background-image: url(/assets/img/xx.jpg);
 	transition: 0.3s ease background-color;
 }
 

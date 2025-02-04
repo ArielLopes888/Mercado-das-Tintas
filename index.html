@@ -57,7 +57,7 @@
           </ul>
         </div>
         <div class="social-icons">
-          <a href="https://www.instagram.com/mercadodastintasoficiall" target="_blank">
+          <a href="https://www.instagram.com/mercadodastintasoficial" target="_blank">
             <img src="assets/img/icons8-instagram-48.png" alt="Instagram" class="instagram-logo">
           </a>
         </div>
@@ -109,11 +109,18 @@
 
     <div class="carousel">
       <div class="carousel-slide">
-
-        <img src="assets/img/1.png" alt="Imagem 1">
+        <img src="assets/img/1.jpg" alt="Imagem 1" srcset="assets/img/1b.jpg 768w, 
+                   assets/img/1b.jpg 1024w, 
+                   assets/img/1.jpg 1440w" sizes="(max-width: 768px) 100vw, 
+                  (max-width: 1024px) 90vw, 
+                  1440px">
       </div>
       <div class="carousel-slide">
-        <img src="assets/img/2.png" alt="Imagem 2">
+        <img src="assets/img/2.jpg" alt="Imagem 2" srcset="assets/img/2b.jpg 768w, 
+                   assets/img/2b.jpg 1024w, 
+                   assets/img/2.jpg 1440w" sizes="(max-width: 768px) 100vw, 
+                  (max-width: 1024px) 90vw, 
+                  1440px">
       </div>
     </div>
 
@@ -123,7 +130,6 @@
       <span class="dot"></span>
     </div>
   </section>
-
   <!-- End Hero Section -->
 
   <!-- Section Two -->
@@ -186,7 +192,7 @@
       <div class="product-image">
         <img src="assets/img/img4.png" alt="Produto 4">
         <p>
-          Tinta Metalatex Sherwin Williams 3,5L </p>
+          Tinta Metalatex Sherwin Williams 3,6L </p>
       </div>
       <div class="product-image">
         <img src="assets/img/img5.png" alt="Produto 5">
@@ -227,24 +233,25 @@
 
 
   <section id="sectionfour">
-    <div>
+    <div class="content-wrapper">
       <h1 class="section-title">FAÇA SEU ORÇAMENTO GRATUITO COM A GENTE!</h1>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br>
-    <article class="button-article">
-      <a href="contato.html" target="_blank" class="button-cta">
-        Orçamento Gratuito
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"
-          class="cta-button">
-      </a>
-    </article>
-    <img src="assets/img/vendedor.png" alt="vendedor" class="img-vendedor">
-  </section>
+      <article class="button-article">
+        <a href="contato.html" target="_blank" class="button-cta">
+          Orçamento Gratuito
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"
+            class="cta-button">
+        </a>
+      </article>
+      <img src="assets/img/vendedor.png" alt="vendedor" class="img-vendedor">
 
+    </div>
+  </section>
 
 
   <!-- Logos Section -->
   <section id="logos">
+    <br><br><br>
+    <h1 class="section-title">Principais Marcas</h1>
     <div class="logos-section">
       <div class="logos"><img src="assets/img/logo1.png" alt="Logo 1"></div>
       <div class="logos"><img src="assets/img/logo2.webp" alt="Logo 2"></div>
@@ -252,11 +259,11 @@
       <div class="logos"><img src="assets/img/logo4.png" alt="Logo 4"></div>
       <div class="logos"><img src="assets/img/logo5.webp" alt="Logo 5"></div>
       <div class="logos"><img src="assets/img/logo6.png" alt="Logo 6"></div>
-      <div class="logos"><img src="assets/img/logo7.png" alt="Logo 7"></div>
-      <div class="logos"><img src="assets/img/logo8.webp" alt="Logo 8"></div>
+      <div class="logos"><img src="assets/img/logo7.jfif" alt="Logo 7"></div>
+      <div class="logos"><img src="assets/img/logo8.png" alt="Logo 8"></div>
       <div class="logos"><img src="assets/img/logo9.png" alt="Logo 9"></div>
-      <div class="logos"><img src="assets/img/logo10.webp" alt="Logo 10"></div>
-      <div class="logos"><img src="assets/img/logo11.webp" alt="Logo 11"></div>
+      <div class="logos"><img src="assets/img/logo10.png" alt="Logo 10"></div>
+      <div class="logos"><img src="assets/img/logo11.png" alt="Logo 11"></div>
     </div>
 
     <article class="whatsapp-article">
@@ -266,6 +273,7 @@
           class="cta-whats">
       </a>
     </article>
+    <br><br><br>
   </section>
 
 
@@ -395,8 +403,8 @@
   <!-- End Footer -->
 
 
-
-  <script src="./app.js"></script>
+  <!-- 
+  <script src="./app.js"></script> -->
   <script>
     const slides = document.querySelectorAll('.carousel-slide');
     const dots = document.querySelectorAll('.carousel-indicators .dot');
