@@ -50,6 +50,16 @@ p {
 	letter-spacing: 0.2rem;
 	text-align: center;
 }
+.section-title-white {
+	font-family: 'Baloo 2', cursive;
+	font-size: 4rem;
+	font-weight: 300;
+	color: #ffffff;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
 
 .section-title span {
 	color: #1c94d4;
@@ -240,7 +250,6 @@ p {
 /* Hero Section */
 #hero {
 	background-attachment: fixed;
-	background-image: url(/assets/img/);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -320,14 +329,14 @@ p {
 .carousel-indicators .dot {
 	width: 12px;
 	height: 12px;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0);
 	border-radius: 50%;
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
 
 .carousel-indicators .dot.active {
-	background-color: #ffffff;
+	background-color: #ffffff00;
 }
 
 /* WhatsApp */
@@ -864,7 +873,6 @@ p {
 	/* Espaço entre os elementos */
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/.png);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
