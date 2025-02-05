@@ -99,7 +99,6 @@ p {
 
 /* Header section */
 #header {
-
 	z-index: 1000;
 	left: 0;
 	top: 0;
@@ -108,11 +107,10 @@ p {
 }
 
 #header .header {
-	min-height: 30vh;
+	min-height: 0vh;
 	background-size: cover;
 	background-position: top center;
 	position: relative;
-	background-image: url(/assets/img/xx.jpg);
 	transition: 0.3s ease background-color;
 }
 
